@@ -205,7 +205,7 @@ dialog::backdrop { background: rgba(22,32,26,.35); }
   </main>
 </div>
 
-<footer class="copy">© t2ME · DOOH 전용</footer>
+<footer class="copy">© t2ME · DOOH 전용 · 본 페이지의 저작권은 t2ME에 있습니다.</footer>
 
 <dialog id="guide" aria-labelledby="guideTitle">
   <div class="dlg">
@@ -616,7 +616,7 @@ function donut3d(value, opt) {
         const h = doc.getElementById('capH'); if (h) h.hidden = false;
         const c = doc.getElementById('capture'); if (c) { c.style.padding = '24px'; c.style.background = '#f4f6f2'; }
         const s = doc.getElementById('share'); if (s) s.remove();
-        if (c) { const f = doc.createElement('div'); f.className = 'cap-f'; f.textContent = '© t2ME · DOOH 전용'; c.appendChild(f); }
+        if (c) { const f = doc.createElement('div'); f.className = 'cap-f'; f.textContent = '© t2ME · DOOH 전용 · 본 페이지의 저작권은 t2ME에 있습니다.'; c.appendChild(f); }
       },
     });
     return await new Promise((res) => canvas.toBlob((b) => res(b), 'image/png'));
